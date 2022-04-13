@@ -624,6 +624,7 @@ $utilities: map-merge(
         invisible: hidden,
       )
     ),
+    // custom utils
     "z-index": (
       property: z-index,
       class: z,
@@ -634,9 +635,19 @@ $utilities: map-merge(
         2: 200,
         3: 300,
       )
-    )
-    // custom utils
-
+    ),
+    "cursor": (
+      property: cursor,
+      class: cur,
+      values: (
+        pointer: pointer,
+        help: help,
+        wait: wait,
+        default: default,
+        move: move,
+        not-allowed: not-allowed,
+      )
+    ),
     // scss-docs-end utils-visibility
   ),
   $utilities
