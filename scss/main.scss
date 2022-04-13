@@ -1,0 +1,12 @@
+.container {
+    background-color: red;
+    &:hover {
+        background-color: #fff;
+    }
+    .cover {
+        width: 100px;
+    }
+    .text {
+        color: purple;
+    }
+}

@@ -1,0 +1,16 @@
+.container {
+  background-color: red;
+}
+
+.container:hover {
+  background-color: #fff;
+}
+
+.container .cover {
+  width: 100px;
+}
+
+.container .text {
+  color: purple;
+}
+/*# sourceMappingURL=main.css.map */
