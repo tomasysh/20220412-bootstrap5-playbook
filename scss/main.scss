@@ -1,12 +1,28 @@
-.container {
-    background-color: red;
-    &:hover {
-        background-color: #fff;
-    }
-    .cover {
-        width: 100px;
-    }
-    .text {
-        color: purple;
-    }
-}
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../vendors/bootstrap/functions";
+
+// 2. Include any default variable overrides here
+$primary: #fd7e14;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../vendors/bootstrap/variables";
+@import "../vendors/bootstrap/mixins";
+@import "../vendors/bootstrap/root";
+
+// 4. Include any optional Bootstrap CSS as needed
+@import "../vendors/bootstrap/utilities";
+@import "../vendors/bootstrap/reboot";
+@import "../vendors/bootstrap/buttons";
+@import "../vendors/bootstrap/type";
+@import "../vendors/bootstrap/images";
+@import "../vendors/bootstrap/containers";
+@import "../vendors/bootstrap/grid";
+@import "../vendors/bootstrap/helpers";
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../vendors/bootstrap/utilities/api";
+
+// 6. Add additional custom code here
